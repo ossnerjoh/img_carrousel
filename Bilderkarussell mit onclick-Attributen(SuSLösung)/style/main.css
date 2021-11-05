@@ -1,0 +1,47 @@
+body, html{
+    height: 100%;
+}
+
+#slider{
+    width: 50%;
+    position: relative;
+    margin: 200px auto;
+    box-shadow:0 0 30px 50px #444;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+#leftButton, #rightButton{
+    width: 2em;
+    position: absolute;
+    background: rgba(50, 50, 50, 0.1);
+    
+    color: #fff;
+    font-size: 2em;
+    padding: 1em 0;
+    top: calc(50% - 2em);
+    transition: 1s;
+}
+
+#leftButton{      
+    left: 0;
+    
+}
+
+#rightButton{   
+    right: 0;
+}
+
+#leftButton:hover{
+    background: rgba(50, 50, 50, 0.8);
+    border-radius: 0 20px 20px 0;
+}
+#rightbutton:hover{
+    background: rgba(50, 50, 50, 0.8);
+    border-radius:  20px 0 0 20px;
+}
+
+#slider img{
+    width: 100%;
+}

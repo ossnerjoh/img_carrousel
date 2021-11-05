@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style/main.css">
+        <meta charset="utf-8">
+
+        <style>
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                padding-bottom: 100px;
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+            /* Modal Content */
+            .modal-content {
+                background-color: #fefefe;
+                margin: auto;
+                padding: 30px;
+                border: 1px solid #888;
+                width: 60%;
+                position: relative;
+            }
+
+            /* The Close Button */
+            .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 36px;
+                font-weight: bold;
+                position: absolute;
+                right: 5px;
+                top: 3px;
+               
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                
+                <div id="slider">
+                    <button id="leftButton">&lt;</button>
+                    <button id="rightButton">&gt;</button>
+                    <div id="imgContainer">
+                        <img id = "imgTag" src="img/img01.jpg" alt="FirstPic">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h1>Seite mit beliebigem Content</h1>
+            <p>Ein Modal ist ein div, das über den gesamten Bildschirm und somit über alle anderen Seitencontents gelegt wird. Mit JavaScript wird beim Klick auf die Buttons das Modal angezeigt oder wieder verschwinden lassen.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis veniam error ad qui aliquid libero accusantium possimus voluptatibus nihil, reprehenderit numquam quo, accusamus, non adipisci atque at mollitia obcaecati optio.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deserunt temporibus nulla! Molestiae saepe quaerat velit itaque doloribus sit hic similique eaque sequi aliquam odio, fuga expedita labore quae? Nihil.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident minus ipsum et ut officiis iste, animi itaque quas adipisci tempora, ad facere culpa nihil consequatur, corrupti ipsa autem dolorum laudantium.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit pariatur, maxime, quasi quas saepe omnis consequatur nulla rem minima, iure laudantium doloribus veniam. Numquam enim maiores voluptatum ducimus soluta ratione!
+            </p>
+        </div>
+    
+    <script src="scripts/04SliderInModal.js"></script>
+        
+    </body>
+</html>
